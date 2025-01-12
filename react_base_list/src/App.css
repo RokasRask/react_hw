@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.divsHere {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: pink;
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
