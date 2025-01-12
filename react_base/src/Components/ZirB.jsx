@@ -1,6 +1,6 @@
 export default function ZirB({ number }) {
     const textStyle = {
-        color: number === 1 ? 'blue' : 'red',
+        color: number === 1 ? 'blue' : 'red'
     };
 
     return (
