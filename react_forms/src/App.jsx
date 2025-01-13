@@ -1,6 +1,7 @@
 import './App.css';
 import Antras from './Components/Antras';
 import Pirmas from './Components/Pirmas';
+import Trecias from './Components/Trecias';
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <Pirmas />
 
       <Antras />
+
+      <Trecias />
 
       </header>
     </div>
