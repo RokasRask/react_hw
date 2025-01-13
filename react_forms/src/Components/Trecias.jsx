@@ -4,7 +4,7 @@ export default function Trecias() {
   const [firstValue, setFirstValue] = useState(100);
   const [secondValue, setSecondValue] = useState(50);
 
-  const ratio = 2; // Santykis tarp laukelių
+  const ratio = 2;
 
   const handleFirstChange = (e) => {
     const newValue = parseFloat(e.target.value);
