@@ -1,5 +1,7 @@
 import './App.css';
+import './buttons.scss';
 import Antras from './Components/Antras';
+import Ketvirtas from './Components/Ketvirtas';
 import Pirmas from './Components/Pirmas';
 import Trecias from './Components/Trecias';
 
@@ -13,6 +15,8 @@ function App() {
       <Antras />
 
       <Trecias />
+
+      <Ketvirtas />
 
       </header>
     </div>

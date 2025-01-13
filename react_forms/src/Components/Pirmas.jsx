@@ -27,7 +27,7 @@ export default function Pirmas() {
         value={inputValue} 
         onChange={(e) => setInputValue(e.target.value)} 
       />
-      <button onClick={addSquares}>Sukurti</button>
+      <button className='red' onClick={addSquares}>Sukurti</button>
       <div style={{ display: 'flex', flexWrap: 'wrap', marginTop: '20px' }}>
         {squares.map((square) => (
           <div 
