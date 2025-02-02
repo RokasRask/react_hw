@@ -25,9 +25,9 @@ const Create = ({ addAnimal }) => {
                     required
                 >
                     <option value="">Pasirinkite tipą</option>
-                    <option value="avis">Avis</option>
-                    <option value="antis">Antis</option>
-                    <option value="antilope">Antilopė</option>
+                    <option value="Avis">Avis</option>
+                    <option value="Antis">Antis</option>
+                    <option value="Antilopė">Antilopė</option>
                 </select>
             </div>
             <div className="mb-3">
