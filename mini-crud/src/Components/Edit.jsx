@@ -29,8 +29,8 @@ const Edit = ({ animal, index, updateAnimal, closeModal }) => {
                                     required
                                 />
                             </div>
-                            <button type="submit" className="btn green">Išsaugoti</button>
-                            <button type="button" className="btn btn-secondary ms-2" onClick={closeModal}>Atšaukti</button>
+                            <button type="submit" className="green">Išsaugoti</button>
+                            <button type="button" className="red" onClick={closeModal}>Atšaukti</button>
                         </form>
                     </div>
                 </div>

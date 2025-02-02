@@ -11,7 +11,7 @@ const Delete = ({ animal, index, confirmDelete, closeModal }) => {
                     </div>
                     <div className="modal-body">
                         <p>{animal.type} - {animal.weight} kg</p>
-                        <button className="btn red me-2" onClick={() => confirmDelete(index)}>Taip</button>
+                        <button className="btn red me-2" onClick={_ => confirmDelete(index)}>Taip</button>
                         <button className="btn btn-secondary" onClick={closeModal}>Ne</button>
                     </div>
                 </div>

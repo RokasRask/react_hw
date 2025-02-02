@@ -10,22 +10,22 @@ const App = () => {
     const [editData, setEditData] = useState(null);
     const [deleteData, setDeleteData] = useState(null);
 
-    useEffect(() => {
+    useEffect(_ => {
         const storedAnimals = JSON.parse(localStorage.getItem('animals')) || [];
         setAnimals(storedAnimals);
     }, []);
 
-    const saveAnimals = (newAnimals) => {
+    const saveAnimals = newAnimals => {
         localStorage.setItem('animals', JSON.stringify(newAnimals));
         setAnimals(newAnimals);
     };
 
-    const addAnimal = (animal) => {
+    const addAnimal = animal => {
         const newAnimals = [...animals, animal];
         saveAnimals(newAnimals);
     };
 
-    const editAnimal = (index) => {
+    const editAnimal = index => {
         setEditData({ index, animal: animals[index] });
     };
 
@@ -36,17 +36,17 @@ const App = () => {
         setEditData(null);
     };
 
-    const deleteAnimal = (index) => {
+    const deleteAnimal = index => {
         setDeleteData({ index, animal: animals[index] });
     };
 
-    const confirmDelete = (index) => {
+    const confirmDelete = index => {
         const newAnimals = animals.filter((_, i) => i !== index);
         saveAnimals(newAnimals);
         setDeleteData(null);
     };
 
-    const closeModal = () => {
+    const closeModal = _ => {
         setEditData(null);
         setDeleteData(null);
     };

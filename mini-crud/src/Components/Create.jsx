@@ -4,7 +4,7 @@ const Create = ({ addAnimal }) => {
     const [type, setType] = useState('');
     const [weight, setWeight] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = e => {
         e.preventDefault();
         if (type && weight) {
             addAnimal({ type, weight: parseFloat(weight) });
@@ -21,7 +21,7 @@ const Create = ({ addAnimal }) => {
                 <select
                     className="form-select"
                     value={type}
-                    onChange={(e) => setType(e.target.value)}
+                    onChange={e => setType(e.target.value)}
                     required
                 >
                     <option value="">Pasirinkite tipą</option>
@@ -36,11 +36,11 @@ const Create = ({ addAnimal }) => {
                     type="number"
                     className="form-control"
                     value={weight}
-                    onChange={(e) => setWeight(e.target.value)}
+                    onChange={e => setWeight(e.target.value)}
                     required
                 />
             </div>
-            <button type="submit" className="btn green">Pridėti</button>
+            <button type="submit" className="green">Pridėti</button>
         </form>
     );
 };
